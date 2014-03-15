@@ -1,0 +1,1 @@
+cmd_drivers/thermal/built-in.o :=  /home/fenny/Source/aokp-mr1/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/thermal/built-in.o drivers/thermal/thermal_sys.o drivers/thermal/msm8960_tsens.o drivers/thermal/pm8xxx-tm.o drivers/thermal/msm_thermal.o 

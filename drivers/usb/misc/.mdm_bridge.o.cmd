@@ -1,0 +1,1 @@
+cmd_drivers/usb/misc/mdm_bridge.o := /home/fenny/Source/aokp-mr1/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/usb/misc/mdm_bridge.o drivers/usb/misc/mdm_ctrl_bridge.o drivers/usb/misc/mdm_data_bridge.o 

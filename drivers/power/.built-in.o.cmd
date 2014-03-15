@@ -1,0 +1,1 @@
+cmd_drivers/power/built-in.o :=  /home/fenny/Source/aokp-mr1/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/power/built-in.o drivers/power/power_supply.o drivers/power/pm8921-charger.o drivers/power/battery_current_limit.o 

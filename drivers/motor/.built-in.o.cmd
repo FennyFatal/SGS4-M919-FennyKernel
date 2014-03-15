@@ -1,0 +1,1 @@
+cmd_drivers/motor/built-in.o :=  /home/fenny/Source/aokp-mr1/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/motor/built-in.o drivers/motor/vibrator.o drivers/motor/max77693_haptic.o 
