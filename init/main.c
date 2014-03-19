@@ -432,6 +432,11 @@ static int __init do_early_param(char *param, char *val)
 		if (strncmp(val, "charger", 7) == 0)
 			poweroff_charging = 1;
 	}
+	/*  add back legacy charge support */
+        if ((strncmp(param, "androidboot.bootchg", 19) == 0)) {
+                if (strncmp(val, "true", 4) == 0)
+                        poweroff_charging = 1;
+	}
 #endif
 	return 0;
 }
