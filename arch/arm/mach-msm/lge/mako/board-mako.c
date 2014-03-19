@@ -134,11 +134,14 @@ static bool mako_charger_mode;
 
 static int __init mako_androidboot_mode_arg(char *options)
 {
-	if (!strcmp(options, "charger"))
+	if (!strcmp(options, "charger") || !strcmp(options, "true"))
 		mako_charger_mode = true;
 	return 0;
 }
+
 early_param("androidboot.mode", mako_androidboot_mode_arg);
+
+early_param("androidboot.bootchg", mako_androidboot_mode_arg);
 
 #ifdef CONFIG_KERNEL_MSM_CONTIG_MEM_REGION
 static unsigned msm_contig_mem_size = MSM_CONTIG_MEM_SIZE;
