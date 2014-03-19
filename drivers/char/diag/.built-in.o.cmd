@@ -1,1 +1,0 @@
-cmd_drivers/char/diag/built-in.o :=  /home/fenny/Source/aokp-mr1/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/char/diag/built-in.o drivers/char/diag/diagchar.o drivers/char/diag/diagfwd_bridge.o drivers/char/diag/diagfwd_hsic.o drivers/char/diag/diagfwd_smux.o 

@@ -1,1 +1,0 @@
-cmd_drivers/net/usb/rmnet_usb.o := /home/fenny/Source/aokp-mr1/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/net/usb/rmnet_usb.o drivers/net/usb/rmnet_usb_ctrl.o drivers/net/usb/rmnet_usb_data.o 

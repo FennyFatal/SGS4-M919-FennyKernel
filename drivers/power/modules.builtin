@@ -1,3 +1,0 @@
-kernel/drivers/power/power_supply.ko
-kernel/drivers/power/pm8921-charger.ko
-kernel/drivers/power/battery_current_limit.ko

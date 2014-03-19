@@ -1,1 +1,0 @@
-cmd_drivers/hwmon/built-in.o :=  /home/fenny/Source/aokp-mr1/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/hwmon/built-in.o drivers/hwmon/hwmon.o drivers/hwmon/pm8xxx-adc.o drivers/hwmon/pm8xxx-adc-scale.o drivers/hwmon/epm_adc.o 

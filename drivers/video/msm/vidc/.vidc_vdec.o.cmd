@@ -1,1 +1,0 @@
-cmd_drivers/video/msm/vidc/vidc_vdec.o := /home/fenny/Source/aokp-mr1/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/video/msm/vidc/vidc_vdec.o drivers/video/msm/vidc/common/dec/vdec.o 

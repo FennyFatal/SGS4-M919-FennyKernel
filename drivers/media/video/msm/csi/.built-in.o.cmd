@@ -1,1 +1,0 @@
-cmd_drivers/media/video/msm/csi/built-in.o :=  /home/fenny/Source/aokp-mr1/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/media/video/msm/csi/built-in.o drivers/media/video/msm/csi/msm_csi2_register.o drivers/media/video/msm/csi/msm_csiphy.o drivers/media/video/msm/csi/msm_csid.o drivers/media/video/msm/csi/msm_ispif.o 

@@ -1,1 +1,0 @@
-cmd_net/netfilter/interceptor/built-in.o :=  /home/fenny/Source/aokp-mr1/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o net/netfilter/interceptor/built-in.o net/netfilter/interceptor/vpnclient.o 

@@ -1,1 +1,0 @@
-cmd_drivers/media/video/msm/io/built-in.o :=  /home/fenny/Source/aokp-mr1/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/media/video/msm/io/built-in.o drivers/media/video/msm/io/msm_camera_io_util.o drivers/media/video/msm/io/msm_camera_i2c.o drivers/media/video/msm/io/msm_camera_i2c_mux.o drivers/media/video/msm/io/msm_io_8960.o 

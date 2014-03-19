@@ -1,1 +1,0 @@
-cmd_drivers/leds/built-in.o :=  /home/fenny/Source/aokp-mr1/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/leds/built-in.o drivers/leds/led-core.o drivers/leds/led-class.o drivers/leds/led-triggers.o drivers/leds/leds-an30259a.o drivers/leds/leds-max77693.o drivers/leds/ledtrig-heartbeat.o 

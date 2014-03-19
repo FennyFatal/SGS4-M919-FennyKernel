@@ -1,1 +1,0 @@
-cmd_drivers/iommu/built-in.o :=  /home/fenny/Source/aokp-mr1/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-ld -EL    -r -o drivers/iommu/built-in.o drivers/iommu/iommu.o drivers/iommu/msm_iommu.o drivers/iommu/msm_iommu_dev.o 
