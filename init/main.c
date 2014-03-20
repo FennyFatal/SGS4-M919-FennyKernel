@@ -238,8 +238,6 @@ early_param("loglevel", loglevel);
  static int __init battStatus(char *str)
 {
 	int batt_val;
-  
-	
 	if (get_option(&str, &batt_val)) {
 		console_batt_stat = batt_val;
 		return 0;
@@ -272,12 +270,18 @@ static int __init repair_env_string(char *param, char *val)
  */
 static int __init unknown_bootoption(char *param, char *val)
 {
+        if ((strncmp(param, "androidboot.bootchg", 19) == 0)) {
+                if (strncmp(val, "true", 4) == 0)
+		{
+			param = "androidboot.mode";
+			val = "chargerlogo";
+		}
+        }
 	repair_env_string(param, val);
 
 	/* Handle obsolete-style parameters */
 	if (obsolete_checksetup(param))
 		return 0;
-
 	/* Unused module parameter. */
 	if (strchr(param, '.') && (!val || strchr(param, '.') < val))
 		return 0;
@@ -297,6 +301,7 @@ static int __init unknown_bootoption(char *param, char *val)
 				break;
 		}
 		envp_init[i] = param;
+
 	} else {
 		/* Command line option */
 		unsigned int i;
