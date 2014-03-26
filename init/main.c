@@ -271,13 +271,6 @@ static int __init repair_env_string(char *param, char *val)
  */
 static int __init unknown_bootoption(char *param, char *val)
 {
-        if ((strncmp(param, "androidboot.bootchg", 19) == 0)) {
-                if (strncmp(val, "true", 4) == 0)
-		{
-			param = "androidboot.mode";
-			val = "chargerlogo";
-		}
-        }
 	repair_env_string(param, val);
 
 	/* Handle obsolete-style parameters */
@@ -437,11 +430,6 @@ static int __init do_early_param(char *param, char *val)
 	if ((strncmp(param, "androidboot.mode", 16) == 0)) {
 		if (strncmp(val, "charger", 7) == 0)
 			poweroff_charging = 1;
-	}
-	/*  add back legacy charge support */
-        if ((strncmp(param, "androidboot.bootchg", 19) == 0)) {
-                if (strncmp(val, "true", 4) == 0)
-                        poweroff_charging = 1;
 	}
 #endif
 	return 0;
